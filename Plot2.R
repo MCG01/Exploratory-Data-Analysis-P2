@@ -5,7 +5,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 subSetMaryland <- Summary[SummaryPM25$fips== "24510",]
 yearlyTotals <- aggregate(Emissions ~ year, subSetMaryland, sum)
 #Create PNG file
-png('Plot2.png')
+png(file="Plot2.png", width = 640, height = 480, pointsize = 12, bg = "white")
 #Create Plot
 barplot(height=yearlyTotals$Emissions, names.arg=yearlyTotals$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' emissions at various years in Baltimore City, Maryland'))
 #Close
