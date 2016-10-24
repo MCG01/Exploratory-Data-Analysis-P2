@@ -21,7 +21,7 @@ png(file="Plot3.png", width = 640, height = 480, pointsize = 12, bg = "white")
 #Create Plot
 thePlot <- ggplot(yearlyTotalsbyType, aes(year, Emissions, color = type))
 thePlot <- thePlot + geom_line() + xlab("year") + ylab(expression('Total PM'[2.5]*" Emissions")) +
-  ggtitle('Total PM'[2.5]*' emissions at various years in Baltimore City, Maryland by type')
+  ggtitle("Total PM 2.5 emissions in Baltimore City, Maryland by type from 1999 to 2008")
 print(thePlot)
 
 #Close
