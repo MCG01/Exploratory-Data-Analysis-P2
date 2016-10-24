@@ -24,7 +24,7 @@ png(file="Plot4.png", width = 640, height = 480, pointsize = 12, bg = "white")
 #Create Plot
 thePlot <- ggplot(yearlyTotalsCoal, aes(factor(year), Emissions))
 thePlot <- thePlot + geom_bar(stat="identity") + xlab("year") + ylab(expression('Total PM'[2.5]*' Emissions')) +
-  ggtitle('Total USA coal related PM'[2.5]*' emissions from 1999 to 2008')
+  ggtitle("Total USA coal related PM 2.5 emissions from 1999 to 2008")
 print(thePlot)
 
 #Close
