@@ -15,7 +15,6 @@ yearlyTotals$fips[yearlyTotals$fips=="24510"] <- "Baltimore, MD"
 # Create PNG file
 png(file="Plot2.png", width = 640, height = 480, pointsize = 12, bg = "white")
 
-
 # Create Plot
 barplot(height=yearlyTotals$Emissions, names.arg=yearlyTotals$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' emissions for Baltimore City, Maryland from 1999 to 2008'))
 
